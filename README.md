@@ -38,7 +38,12 @@ powershell -File src\build-zhpatch.ps1 -NoInstall -Game "<游戏目录>"
 powershell -File src\make-zhpatch-kit.ps1 -Game "<游戏目录>"
 ```
 
-`src/assets/zh-text/` 下的 `zh_extra.txt`、`zh_terms.txt` 含有游戏原文，所以**不在仓库里**（见 [GAME-ASSETS-NOTICE.md](public/GAME-ASSETS-NOTICE.md)）。没有它们也能编译和运行，只是少了补译和术语修正；Releases 里的 zip 是完整版。
+从源码编译出来的补丁和 Releases 里的 zip 完全一样。`src/assets/zh-text/` 下的两个数据文件：
+
+- `zh_extra.txt`：游戏中文里空着的条目的补译。每行是「英文原文的哈希值 + 中文」，哈希是英文原文 UTF-8 的 SHA-1 前 16 位（见 `src/OriCoop/Ui/ZhTextKey.cs`），所以文件里没有游戏的英文原文。
+- `zh_terms.txt`：对官方中文术语的少量修正。
+
+详见 [GAME-ASSETS-NOTICE.md](public/GAME-ASSETS-NOTICE.md)。
 
 ### 来源和许可
 
@@ -83,7 +88,12 @@ powershell -File src\build-zhpatch.ps1 -NoInstall -Game "<game folder>"
 powershell -File src\make-zhpatch-kit.ps1 -Game "<game folder>"
 ```
 
-`zh_extra.txt` and `zh_terms.txt` under `src/assets/zh-text/` contain game text, so they are **not in this repository** (see [GAME-ASSETS-NOTICE.md](public/GAME-ASSETS-NOTICE.md)). The patch builds and runs without them, minus those fallback translations and term fixes. The zip in Releases is the full build.
+A build from source is the same as the zip in Releases. The two data files under `src/assets/zh-text/`:
+
+- `zh_extra.txt`: Chinese for entries the game leaves blank. Each line is "hash of the English line + Chinese"; the hash is the first 16 hex digits of SHA-1 over the UTF-8 English text (see `src/OriCoop/Ui/ZhTextKey.cs`), so the file holds no English game text.
+- `zh_terms.txt`: a few corrections to official Chinese terms.
+
+See [GAME-ASSETS-NOTICE.md](public/GAME-ASSETS-NOTICE.md).
 
 ### Origin and licences
 

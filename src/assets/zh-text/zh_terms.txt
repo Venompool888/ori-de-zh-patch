@@ -1,0 +1,35 @@
+# Current<TAB>approved; UTF-8, literal ordinal matching, longest source first.
+# Source: tools/zh-fonts/out/GLOSSARY.tsv; owner approved high/medium only.
+# Blank rows are supplied directly in zh_extra.txt. No replacements inside [...].
+# Unsafe bare Bash name is scoped to the unique Light Burst description fragment.
+# Character names stay in their original English form, including inside place/item names.
+奥里 and the Blind Forest	Ori and the Blind Forest
+奥日与黑暗森林	Ori and the Blind Forest
+GUMO 的藏身处	Gumo的藏身处
+巨大的精灵之光容器	巨型精灵之光容器
+大的精灵之光容器	大型精灵之光容器
+小的精灵之光容器	小型精灵之光容器
+增加猛击伤害	增加光芒爆裂伤害
+GUMO	Gumo
+Gumo	Gumo
+尼博尔山	尼博尔
+攀爬能力	攀爬
+猛击攻击	猛击
+飞岩走壁	飞檐走壁
+鑴之山	掘之山
+# Normalize the game's own Chinese character names at runtime.
+奥里	Ori
+奥日	Ori
+赛安	Sein
+纳鲁	Naru
+古莫	Gumo
+古门	Gumon
+黑子	Kuro
+埃基	Eki
+阿诺	Ano
+尼尔	Nir
+里姆	Reem
+菲尔	Fil
+阿祖	Atsu
+# Fil (the spirit in the Ancestral Trees) stays in English.
+Fil	Fil
